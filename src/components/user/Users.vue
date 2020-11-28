@@ -18,10 +18,6 @@
         <el-col :span="4">
           <el-button type="primary" @click="adddialogVisible =!adddialogVisible">添加用户</el-button>
         </el-col>
-
-
-
-        
       </el-row>
       <!-- 用户列表 -->
       <el-table :data="userList" style="width: 100%" border stripe>
@@ -95,6 +91,7 @@
           :page-size="queryInfo.pagesize"
           layout="total, sizes, prev, pager, next, jumper"
           :total="total"
+          background
         ></el-pagination>
       </div>
     </el-card>

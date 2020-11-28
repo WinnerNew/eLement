@@ -3,8 +3,8 @@
     <!-- 头部 -->
     <el-header>
       <div>
-        <img src="../assets/LOGO.jpg" alt />
-        <span>超级后台管理系统</span>
+        <img src="../assets/home-logo.png" alt />
+        <!-- <span>超级后台管理系统</span> -->
       </div>
       <el-button type="danger" icon="el-icon-minus" size="mini" circle @click="signOut"></el-button>
     </el-header>
@@ -128,9 +128,7 @@ export default {
     display: flex;
     align-items: center;
     img {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
+      width: 300px;
     }
     span {
       margin-left: 15px;

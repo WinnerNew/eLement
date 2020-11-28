@@ -15,7 +15,7 @@
           <el-input prefix-icon="el-icon-user" v-model="loginForm.username"></el-input>
         </el-form-item>
         <el-form-item prop="password">
-          <el-input prefix-icon="el-icon-lock" type="password" v-model="loginForm.password"></el-input>
+          <el-input prefix-icon="el-icon-lock"  v-on:keyup.enter.native="login" type="password" v-model="loginForm.password"></el-input>
         </el-form-item>
         <el-form-item class="btns">
           <el-button type="primary" @click="login">登录</el-button>
