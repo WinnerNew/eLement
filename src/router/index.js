@@ -30,7 +30,7 @@ const routes = [
       {
         path: '/welcome',
         name: 'welcome',
-        component: Welcome,
+        component: Welcome
       },
       {
         path: '/users',
@@ -56,11 +56,9 @@ const routes = [
         path: '/goods',
         name: 'goods',
         component: Goods
-      },
-
-      
+      }
     ]
-  },
+  }
 ]
 
 const router = new VueRouter({
@@ -73,7 +71,6 @@ router.beforeEach((to, from, next) => {
   if (!tokenStr) return next('/login');
   next();
 })
-
 
 
 export default router
